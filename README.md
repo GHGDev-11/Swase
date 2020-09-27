@@ -1,10 +1,10 @@
-# Switch
-Welcome to Switch!\
+# Swase
+Welcome to Swase!\
 The better if statement; a switch case statement emulator!\
 \
 You can use it like this:
 ```py
-from Switch import Switch
+from Swase import Switch
 
 while True:
     cmd = input('> ')
