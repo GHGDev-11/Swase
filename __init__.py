@@ -1,1 +1,1 @@
-from Swase import Switch
+from Switch import Switch
