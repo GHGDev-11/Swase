@@ -25,4 +25,4 @@ while True:
 ```
 Every time you want to add a new statement, you have to use `AddToSwitch()`.\
 ## No matter how many statements you have, `LastSwitch()` always has to be at the end!
-You can define the default statement with `Else='...'`, and bind every statement you previously defined to your variable with `LastSwitch()`.
+You can define the default statement with `LastSwitch(Else='...')`, and bind every statement you previously defined to your variable with `LastSwitch(Bind='...')`.
