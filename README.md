@@ -12,7 +12,7 @@ while True:
     nest.AddToSwitch(Input='Mercury', Outcome='print("You typed in Mercury!")')
     nest.LastSwitch(Input='Venus', Outcome='print("You typed in Venus!")', Else='print("Not available.")', Bind=cmd)
 ```
-This code is the same as:\
+This code is the same as:
 ```py
 while True:
     cmd = input('> ')
