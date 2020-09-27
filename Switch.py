@@ -1,17 +1,14 @@
 class Switch:
     def __init__(self):
-        self.switchList = {}
-        self.inputCMD = ''
+        self.switchList={}
     def AddToSwitch(self, Input, Outcome):
-        self.switchList[Input] = Outcome
-        self.inputCMD += f'\n{Input}'
+        self.switchList[Input]=Outcome
     def PrintSwitch(self):
         print(self.switchList)
     def LastSwitch(self, Input, Outcome, Else, Bind):
-        self.switchList[Input] = Outcome
-        self.inputCMD += f'\n{Input}'
-        self.switchList.get(Bind)
-        if Bind in self.switchList:
-            exec(Outcome)
-        else:
+        self.switchList[Input]=Outcome
+        Answer=self.switchList.get(Bind)
+        try:
+            exec(Answer)
+        except TypeError:
             exec(Else)
