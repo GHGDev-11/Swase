@@ -10,8 +10,11 @@ class Switch:
     def PrintSwitch(self):
         print(self.switchList)
     
-    def LastSwitch(self, Input, Outcome, Else):
+    def LastSwitch(self, Input, Outcome, Else, Bind):
         self.switchList[Input] = Outcome
         self.inputCMD += f'\n{Input}'
-        self.switchList.get(self.inputCMD, exec(Else))
-        print(self.inputCMD)
+        self.switchList.get(Bind)
+        if Bind in self.switchList:
+            exec(Outcome)
+        else:
+            exec(Else)
