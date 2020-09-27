@@ -5,7 +5,7 @@ class Switch:
         self.switchList[Input]=Outcome
     def PrintSwitch(self):
         print(self.switchList)
-    def LastSwitch(self, Input, Outcome, Else, Bind):
+    def LastSwitch(self, Input, Outcome, Bind, Else=''):
         self.switchList[Input]=Outcome
         Answer=self.switchList.get(Bind)
         try:
