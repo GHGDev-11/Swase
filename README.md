@@ -3,7 +3,7 @@ Welcome to Switch!\
 The better if statement; a switch case statement emulator!\
 \
 You can use it like this:
-```
+```py
 from Switch import Switch
 
 while True:
