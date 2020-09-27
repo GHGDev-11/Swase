@@ -4,7 +4,7 @@ The better if statement; a switch case statement emulator!\
 \
 You can use it like this:
 ```py
-from Swase import Switch
+from Swase.Switch import Switch
 
 while True:
     cmd = input('> ')
